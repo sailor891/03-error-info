@@ -2,6 +2,7 @@
 members = ["error-code", "error-code-derive"]
 resolver = "2"
 
+# workspace是workspace中可能用到的依赖
 [workspace.dependencies]
 anyhow = "1"
 error-code = { path = "./error-code" }

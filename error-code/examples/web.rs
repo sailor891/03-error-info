@@ -56,6 +56,7 @@ async fn index_handler() -> Result<&'static str, AppError> {
     Err(AppError::ServerError(format!("{bt:?}")))
 }
 
+// 实现IntoResponse才能response给客户端
 impl IntoResponse for AppError {
     fn into_response(self) -> Response {
         let info = self.to_error_info();

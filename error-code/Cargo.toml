@@ -9,6 +9,7 @@ edition = "2021"
 base64 = "0.22.0"
 error-code-derive = { workspace = true }
 
+# dev-dependencies是开发时在examples和tests中引入的依赖
 [dev-dependencies]
 anyhow = { workspace = true }
 axum = { version = "0.7.5", features = ["http2", "query", "tracing"] }
